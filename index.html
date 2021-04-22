@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX</title>
+
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <script src="scripts/main.js" defer></script>
+  </head>
+
+  <body>
+    <ul class="tabs">
+      <li>
+        <a href="#albums"> Albums </a>
+      </li>
+      <li>
+        <a href="#weather"> Weather </a>
+      </li>
+    </ul>
+    <div class="tab-container">
+      <section id="albums">
+        <h1>Albums</h1>
+      </section>
+      <section id="weather">
+        <h1>Current weather in Iasi, Romania</h1>
+        <img src="" id="wicon" class="img"></img>
+        <p class="min-max"></p>
+        <p class="temp-feelslike"></p>
+        <div data-temp-toggle>
+          <label>
+            <input type="radio" name="temp" value="fahrenheit"></input>
+            Fahrenheit
+          </label>
+          <label>
+            <input type="radio" name="temp" value="celsius"></input>
+            Celsius
+          </label>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
